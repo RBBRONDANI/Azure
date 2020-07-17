@@ -1,14 +1,16 @@
-import logging
 import fileinput as file
-import azure.functions as func
 import pandas as pd
+import logging
+import azure.functions as func
 
-processos = pd.read_excel('Processos.xlsx')
 result = False
 
-def main(req: func.HttpRequest) -> func.HttpResponse:
+logging.info('starting')
+
+def main(req: func.HttpRequest, inputblob: func.InputStream) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
     body = req.params.get('body')
+    processos = inputblob
 
     if not body:
         try:

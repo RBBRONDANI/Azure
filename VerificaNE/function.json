@@ -21,7 +21,7 @@
       "direction": "in",
       "name": "inputBlob",
       "path": "neextraction/Processos.xlsx",
-      "connection": "AzureWebJobs.NEExtractor"
+      "connection": "MyStorageConnectionAppSetting"
     }
   ]
 }

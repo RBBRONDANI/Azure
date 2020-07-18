@@ -1,9 +1,13 @@
+import fileinput as file
+import pandas as pd
 import logging
-
 import azure.functions as func
 
+result = False
 
-def main(req: func.HttpRequest) -> func.HttpResponse:
+logging.info('starting')
+
+def main(req: func.HttpRequest, inputblob: func.InputStream) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     name = req.params.get('name')

@@ -3,11 +3,9 @@ import pandas as pd
 import logging
 import azure.functions as func
 
-result = False
-
-logging.info('starting')
-
 def main(req: func.HttpRequest, inputblob: func.InputStream) -> func.HttpResponse:
+    logging.info('starting')
+    result = False
     logging.info('Python HTTP trigger function processed a request.')
     body = req.params.get('body')
     processos = inputblob

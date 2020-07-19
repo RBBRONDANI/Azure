@@ -21,7 +21,7 @@
       "direction": "in",
       "name": "inputblob",
       "path": "neextraction/Processos.xlsx",
-      "connection": "AzureWebJobs.VerificaNE"
+      "connection": "AzureWebJobs"
     }
   ]
 }

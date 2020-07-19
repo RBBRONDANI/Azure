@@ -19,7 +19,7 @@
     {
       "type": "blob",
       "direction": "in",
-      "name": "inputBlob",
+      "name": "inputblob",
       "path": "neextraction/Processos.xlsx",
       "connection": "MyStorageConnectionAppSetting"
     }

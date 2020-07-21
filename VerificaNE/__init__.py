@@ -4,7 +4,6 @@ import logging
 import azure.functions as func
 
 
-
 def main(req: func.HttpRequest, inputblob: func.InputStream) -> func.HttpResponse:
     result = ('False')
     logging.info('starting')
